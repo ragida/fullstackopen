@@ -1,1 +1,2 @@
-This repo contains my submitted exercises for the full stack open course
+This repo contains my submitted exercises for the full stack open course.
+
