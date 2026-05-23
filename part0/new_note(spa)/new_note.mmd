@@ -1,0 +1,17 @@
+sequenceDiagram
+    participant browser
+    participant server
+
+    Note right of browser: User types a note and clicks Save
+
+    Note right of browser: e.preventDefault() — default form submit blocked
+    Note right of browser: Note added to local array, DOM re-rendered immediately
+
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    activate server
+    Note right of server: Body: { content: "...", date: "..." }
+    Note right of server: Content-Type: application/json
+    server-->>browser: 201 Created
+    deactivate server
+
+    Note right of browser: No redirect, no reload — page stays as-is
