@@ -1,11 +1,9 @@
-function parts(props) {
+function Parts(props) {
   return (
-    <div>
-        <p>
-          {props.name} {props.exercises}
-        </p>
-    </div>
+    <p>
+      {props.name} {props.exercises}
+    </p>
   )
 }
 
-export default parts
+export default Parts
