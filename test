@@ -1,9 +1,0 @@
-const timer = {
-    seconds: 0,
-    start: function() {
-        setInterval(function() {
-            this.seconds++;           // ❌ 'this' is undefined here
-            console.log(this.seconds);
-        }, 1000);
-    }
-};
