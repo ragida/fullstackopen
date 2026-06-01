@@ -3,9 +3,9 @@ import Parts from './Parts'
 function Content(props) {
   return (
     <div>
-      <Parts part={props.part1} exercises={props.exercises1}/>
-      <Parts part={props.part2} exercises={props.exercises2}/>
-      <Parts part={props.part3} exercises={props.exercises3}/>
+      <Parts name={props.name1} exercises={props.exercises1}/>
+      <Parts name={props.name2} exercises={props.exercises2}/>
+      <Parts name={props.name3} exercises={props.exercises3}/>
     </div>
   )
 }
